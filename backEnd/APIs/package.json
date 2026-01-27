@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "", 
-    "dev" : "npm start"
+    "test": "",
+    "dev": "npm start"
   },
   "keywords": [],
   "author": "Mario",

@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:AEL": "node dist/AEL/server/server.mjs"
+    "serve:ssr:AEL": "node dist/AEL/server/server.mjs",
+    "prepare": "husky"
   },
   "prettier": {
     "printWidth": 100,
@@ -46,6 +47,7 @@
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
     "@vitest/browser-playwright": "^4.0.18",
+    "husky": "^9.1.7",
     "jsdom": "^27.1.0",
     "playwright": "^1.58.0",
     "typescript": "~5.9.2",
