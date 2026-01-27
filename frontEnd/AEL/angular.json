@@ -2,7 +2,8 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": "e12cfd86-a1b4-42fd-acfe-dcd2d3cab158"
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -25,6 +26,7 @@
               }
             ],
             "styles": [
+              "src/material-theme.scss",
               "src/styles.css"
             ],
             "server": "src/main.server.ts",
@@ -70,8 +72,11 @@
           "defaultConfiguration": "development"
         },
         "test": {
-          "builder": "@angular/build:unit-test"
-        }
+                  "builder": "@angular/build:unit-test",
+                  "options": {
+                    "browsers": ["chromium"]
+                  }
+}
       }
     }
   }
