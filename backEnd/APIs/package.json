@@ -1,0 +1,19 @@
+{
+  "name": "apis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "", 
+    "dev" : "npm start"
+  },
+  "keywords": [],
+  "author": "Mario",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.0.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
