@@ -16,7 +16,6 @@ import { RouterLink } from '@angular/router';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatCheckboxModule,
     MatCardModule,
     RouterLink,
   ],
