@@ -1,0 +1,100 @@
+{
+  // ===========================================
+  // TypeScript Language Configuration
+  // ===========================================
+
+  // Enable TypeScript language service
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  // TypeScript file associations - ensures .ts files are recognized as TypeScript
+  "files.associations": {
+    "*.ts": "typescript",
+    "*.tsx": "typescriptreact"
+  },
+
+  // Language-specific settings for TypeScript
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+
+  // ===========================================
+  // JavaScript Language Configuration
+  // ===========================================
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+
+  // ===========================================
+  // TypeScript Compiler Settings
+  // ===========================================
+
+  // Use workspace version of TypeScript
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  // Check for TypeScript updates
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Enable auto import suggestions
+  "typescript.autoImportSuggestions.enabled": true,
+
+  // Format code when pasting
+  "editor.formatOnPaste": true,
+
+  // ===========================================
+  // Search & IntelliSense
+  // ===========================================
+
+  // Exclude common non-code directories from search
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.git": true,
+    "**/*.log": true
+  },
+
+  // ===========================================
+  // Angular-specific Settings
+  // ===========================================
+
+  // Angular language service
+  "angular.html-template-split-attributes": true,
+  "angular.enable-ivy": true,
+
+  // ===========================================
+  // Other Editor Settings
+  // ===========================================
+
+  // Tab settings for TypeScript
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+
+  // Enable code lens
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.implementationsCodeLens.enabled": true
+}
