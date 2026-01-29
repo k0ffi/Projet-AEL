@@ -6,6 +6,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -17,6 +18,7 @@ import { MatCardModule } from '@angular/material/card';
     MatButtonModule,
     MatCheckboxModule,
     MatCardModule,
+    RouterLink,
   ],
   template: `
     <div class="login-container">
