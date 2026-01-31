@@ -9,7 +9,7 @@ import { Login } from '../../features/login/login';
     :host {
       display: block;
       width: 100%;
-      height: 100%;
+      height: 80%;
     }
   `,
 })
