@@ -9,7 +9,7 @@ import { SignUp } from '../../features/sign-up/sign-up';
     :host {
       display: block;
       width: 100%;
-      height: 100%;
+      height: 80%;
     }
   `,
 })
