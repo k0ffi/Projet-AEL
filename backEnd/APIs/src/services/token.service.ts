@@ -11,8 +11,8 @@ export interface TokenPayload {
 
 // Interface pour le token décodé (avec les données standard JWT)
 export interface DecodedToken extends TokenPayload {
-  iat: number; // Issued At
-  exp: number; // Expiration Time
+  issueAt: number; // Issued At
+  expTime: number; // Expiration Time
 }
 
 /**
@@ -33,8 +33,7 @@ export class TokenService {
     const options: SignOptions = {
       expiresIn: "1h" as const,
     };
-
-    return jwt.sign(payload, authConfig.secret, options);
+    return jwt.sign(payload, authConfig.secret, options); // genere un token avec l'utilisateur , le secret , et le temps d'expiration
   }
 
   /**
@@ -68,10 +67,10 @@ export class TokenService {
    */
   static isTokenExpired(token: string): boolean {
     const decoded = this.decodeToken(token);
-    if (!decoded || !decoded.exp) {
+    if (!decoded || !decoded.expTime) {
       return true;
     }
-    return Date.now() >= decoded.exp * 1000;
+    return Date.now() >= decoded.expTime * 1000;
   }
 
   /**
@@ -79,10 +78,10 @@ export class TokenService {
    */
   static getTimeUntilExpiration(token: string): number {
     const decoded = this.decodeToken(token);
-    if (!decoded || !decoded.exp) {
+    if (!decoded || !decoded.expTime) {
       return 0;
     }
-    const remaining = decoded.exp * 1000 - Date.now();
+    const remaining = decoded.expTime * 1000 - Date.now();
     return Math.max(0, Math.floor(remaining / 1000));
   }
 }

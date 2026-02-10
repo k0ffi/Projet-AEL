@@ -3,7 +3,7 @@ import cors from "cors";
 import {
   authenticateToken,
   type AuthRequest,
-} from "./middleware/auth.middleware.js";
+} from "./middlewares/auth.middleware.js";
 import { TokenService, type TokenPayload } from "./services/token.service.js";
 
 const app = express();
@@ -91,7 +91,7 @@ app.get("/api/token-status", authenticateToken, (req: AuthRequest, res) => {
 app.listen(PORT, () => {
   console.log(`Serveur démarré sur le port ${PORT}`);
   console.log(`URL: http://localhost:${PORT}`);
-  console.log(`\nRoutes d'authentification:`);
+  console.log(`\n Routes d'authentification:`);
   console.log(`  POST /api/login    - Pour obtenir un token`);
   console.log(
     `  GET  /api/profile   - Route protégée (需 Authorization: Bearer <token>)`,
