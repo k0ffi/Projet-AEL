@@ -49,10 +49,17 @@ describe("DatabaseService (DBprocess)", () => {
 
     it("devrait retourner un tableau vide si le fichier n existe pas", async () => {
       // Créer une nouvelle instance pour tester avec un fichier inexistant
+      // Utiliser un répertoire temporaire valide
+      const tempDir = path.join(__dirname, "..", "..", "data", "temp");
+      await fs.mkdir(tempDir, { recursive: true });
+
       const db2 = new DBprocess<TestUser>();
-      await db2.init("/chemin/inexistant.json", "users");
+      await db2.init(path.join(tempDir, "inexistant.json"), "users");
       const data = await db2.readData();
       expect(data).toEqual([]);
+
+      // Nettoyer
+      await fs.rm(tempDir, { recursive: true, force: true });
     });
   });
 

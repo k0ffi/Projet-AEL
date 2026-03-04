@@ -39,6 +39,7 @@ describe("UserController", () => {
       email: "jean@test.com",
       password: "$2b$10$fMaZembJcwk5WMLRLRsD.ObfUp.RaVR1QNv8pbaxxg87Ilb/fTe32", // hash for 'password1'
       token: null,
+      contrats: [],
     },
     {
       id: "2",
@@ -48,6 +49,7 @@ describe("UserController", () => {
       email: "marie@test.com",
       password: "$2b$10$fMaZembJcwk5WMLRLRsD.ObfUp.RaVR1QNv8pbaxxg87Ilb/fTe32", // hash for 'password1'
       token: null,
+      contrats: [],
     },
   ];
 

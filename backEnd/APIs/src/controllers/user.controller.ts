@@ -3,6 +3,13 @@ import DBprocess from "../services/database.service.js";
 import type { user } from "../models/user.js";
 import bcrypt from "bcrypt";
 import path from "path";
+import { fileURLToPath } from "url";
+import { TokenService, type TokenPayload } from "../services/token.service.js";
+import type { AuthRequest } from "../middlewares/auth.middleware.js";
+
+// Récupérer le répertoire courant en ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Chemin vers le fichier JSON par défaut (production)
 const DEFAULT_DB_PATH = path.join(__dirname, "..", "data", "db.json");
@@ -94,6 +101,8 @@ export class UserController {
         email,
         password: hashedPassword,
         token: null,
+        refreshToken: null,
+        contrats: [], // Tableau vide de contrats
       };
 
       const createdUser = await db.createData(newUser);
@@ -195,6 +204,7 @@ export class UserController {
 
   /**
    * POST /api/users/login - Connexion d'un utilisateur
+   * Retourne un access token et un refresh token
    */
   static async login(req: Request, res: Response): Promise<void> {
     try {
@@ -221,14 +231,113 @@ export class UserController {
         return;
       }
 
+      // Générer les tokens JWT
+      const tokenPayload: TokenPayload = {
+        id: user.id,
+        email: user.email,
+        nom: user.nom,
+        prenom: user.prenom,
+      };
+
+      console.log("Génération des tokens pour:", tokenPayload);
+
+      const { accessToken, refreshToken } =
+        TokenService.generateTokens(tokenPayload);
+
+      console.log("Tokens générés, mise à jour du refreshToken dans la base");
+
+      // Stocker le refresh token dans la base de données
+      await db.updateById(user.id, { refreshToken });
+
+      console.log("RefreshToken stocké");
+
       // Ne pas retourner le mot de passe
       const { password: _, ...userWithoutPassword } = user;
       res.json({
         message: "Connexion réussie",
+        accessToken,
+        refreshToken,
         user: userWithoutPassword,
       });
     } catch (error) {
       res.status(500).json({ error: "Erreur lors de la connexion" });
+    }
+  }
+
+  /**
+   * POST /api/auth/refresh - Rafraîchir l'access token
+   * Utilise le refresh token pour obtenir un nouveau access token
+   */
+  static async refresh(req: Request, res: Response): Promise<void> {
+    try {
+      const { refreshToken } = req.body;
+
+      if (!refreshToken) {
+        res.status(400).json({ error: "Refresh token requis" });
+        return;
+      }
+
+      // Vérifier le refresh token
+      const decoded = TokenService.verifyRefreshToken(refreshToken);
+      if (!decoded) {
+        res.status(401).json({ error: "Refresh token invalide ou expiré" });
+        return;
+      }
+
+      // Rechercher l'utilisateur par ID
+      const user = await db.findById(decoded.id);
+      if (!user) {
+        res.status(401).json({ error: "Utilisateur non trouvé" });
+        return;
+      }
+
+      // Vérifier que le refresh token correspond à celui stocké
+      if (user.refreshToken !== refreshToken) {
+        res.status(401).json({ error: "Refresh token invalide" });
+        return;
+      }
+
+      // Générer un nouveau access token
+      const tokenPayload: TokenPayload = {
+        id: user.id,
+        email: user.email,
+        nom: user.nom,
+        prenom: user.prenom,
+      };
+
+      const accessToken = TokenService.generateAccessToken(tokenPayload);
+
+      res.json({
+        message: "Token rafraîchi avec succès",
+        accessToken,
+      });
+    } catch (error) {
+      res
+        .status(500)
+        .json({ error: "Erreur lors du rafraîchissement du token" });
+    }
+  }
+
+  /**
+   * POST /api/auth/logout - Déconnexion de l'utilisateur
+   * Invalide le refresh token
+   */
+  static async logout(req: AuthRequest, res: Response): Promise<void> {
+    try {
+      // Le middleware authenticateToken a déjà vérifié le token d'accès
+      const userId = req.user?.id;
+
+      if (!userId) {
+        res.status(401).json({ error: "Utilisateur non authentifié" });
+        return;
+      }
+
+      // Supprimer le refresh token de la base de données
+      await db.updateById(userId, { refreshToken: null });
+
+      res.json({ message: "Déconnexion réussie" });
+    } catch (error) {
+      res.status(500).json({ error: "Erreur lors de la déconnexion" });
     }
   }
 }

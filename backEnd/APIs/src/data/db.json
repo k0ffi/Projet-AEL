@@ -7,7 +7,8 @@
       "date_naissance": "2000-01-01T00:00:00.000Z",
       "email": "nouveau@test.com",
       "password": "$2b$10$0jXmsV7/ufA7FUB9OSm8nekY/UkixJ8m0U/txXqr6MIs2bS4W2ABC",
-      "token": null
+      "token": null,
+      "contrats": []
     },
     {
       "id": "1772617883120",
@@ -16,7 +17,40 @@
       "date_naissance": "1990-01-15T00:00:00.000Z",
       "email": "jean@test.com",
       "password": "$2b$10$7RwaiZUsQ56MW0j4YClTR.nYBa9o0iRr3kgNX/AciaP3v255y8chO",
-      "token": null
+      "token": null,
+      "contrats": [],
+      "refreshToken": null
+    },
+    {
+      "id": "1772637232211",
+      "nom": "Test",
+      "prenom": "Terminal",
+      "date_naissance": "1995-05-20T00:00:00.000Z",
+      "email": "terminal@test.com",
+      "password": "$2b$10$Lwh9Agy19hFJ3TYWwuq4wOUBd4X8/hplj2t/de9pdL/fppWs/Phnq",
+      "token": null,
+      "contrats": []
+    },
+    {
+      "id": "1772637440217",
+      "nom": "Martin",
+      "prenom": "Sophie",
+      "date_naissance": "1998-03-15T00:00:00.000Z",
+      "email": "sophie.martin@test.com",
+      "password": "$2b$10$flo7HJVuGFSaEp1cXlMnZOTU6quCI7zDobOoiI2OxlUXmLCwRfEea",
+      "token": null,
+      "contrats": []
+    },
+    {
+      "id": "1772637602906",
+      "nom": "djawou",
+      "prenom": "Mario",
+      "date_naissance": "1990-01-01T00:00:00.000Z",
+      "email": "mario.email@test.com",
+      "password": "$2b$10$uCv/KNljH2h4sEbzmT9nK.X6JSExiCQcLQ3JyT4UNnoSB.FFx5q1G",
+      "token": null,
+      "contrats": []
     }
-  ]
+  ],
+  "contrats": []
 }

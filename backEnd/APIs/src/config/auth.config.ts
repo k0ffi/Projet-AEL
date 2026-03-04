@@ -2,5 +2,6 @@
 // En production, utilisez une variable d'environnement: process.env.JWT_SECRET
 export const authConfig = {
   secret: "Manu-yeye-glace-so-lome-alo-gaou-kpedi-lecampus-kpamé!",
-  expiresIn: "1h", // Token valide 1 heure (autres options: "15m", "7d", etc.)
+  accessTokenExpiresIn: "15m", // Access token valide 15 minutes
+  refreshTokenExpiresIn: "7d", // Refresh token valide 7 jours
 };

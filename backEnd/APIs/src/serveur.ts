@@ -6,6 +6,8 @@ import {
 } from "./middlewares/auth.middleware.js";
 import { TokenService } from "./services/token.service.js";
 import userRoutes from "./routes/user.routes.js";
+import contratRoutes from "./routes/contrat.routes.js";
+import authRoutes from "./routes/auth.routes.js";
 
 const app = express();
 const PORT = 3000;
@@ -31,6 +33,12 @@ app.get("/api/test", (req, res) => {
 
 // Routes des utilisateurs
 app.use(userRoutes);
+
+// Routes des contrats
+app.use(contratRoutes);
+
+// Routes d'authentification (refresh token, logout)
+app.use(authRoutes);
 
 /**
  * Route protégée - nécessite un token valide
@@ -62,10 +70,14 @@ app.listen(PORT, () => {
   console.log(`Serveur démarré sur le port ${PORT}`);
   console.log(`URL: http://localhost:${PORT}`);
   console.log(`\n Routes disponibles:`);
-  console.log(`  POST /api/users/register - Inscription`);
-  console.log(`  POST /api/users/login    - Connexion`);
-  console.log(`  GET  /api/users          - Liste utilisateurs (protégé)`);
-  console.log(`  GET  /api/users/:id      - Détail utilisateur (protégé)`);
-  console.log(`  PUT  /api/users/:id      - Modifier utilisateur (protégé)`);
-  console.log(`  DELETE /api/users/:id    - Supprimer utilisateur (protégé)`);
+  console.log(`  POST /api/users/register   - Inscription`);
+  console.log(
+    `  POST /api/users/login      - Connexion (retourne access et refresh tokens)`,
+  );
+  console.log(`  POST /api/auth/refresh     - Rafraîchir l'access token`);
+  console.log(`  POST /api/auth/logout      - Déconnexion`);
+  console.log(`  GET  /api/users            - Liste utilisateurs (protégé)`);
+  console.log(`  GET  /api/users/:id        - Détail utilisateur (protégé)`);
+  console.log(`  PUT  /api/users/:id        - Modifier utilisateur (protégé)`);
+  console.log(`  DELETE /api/users/:id      - Supprimer utilisateur (protégé)`);
 });

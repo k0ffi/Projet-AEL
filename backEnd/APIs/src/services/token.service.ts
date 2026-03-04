@@ -16,13 +16,13 @@ export interface DecodedToken extends TokenPayload {
 }
 
 /**
- * Service pour gérer les tokens JWT
+ * Service pour gérer les tokens JWT (Access et Refresh)
  */
 export class TokenService {
   /**
-   * Génère un token JWT pour un utilisateur
+   * Génère un access token JWT pour un utilisateur (courte durée: 15min)
    */
-  static generateToken(user: TokenPayload): string {
+  static generateAccessToken(user: TokenPayload): string {
     const payload = {
       id: user.id,
       email: user.email,
@@ -31,9 +31,38 @@ export class TokenService {
     };
 
     const options: SignOptions = {
-      expiresIn: "1h" as const,
+      expiresIn: authConfig.accessTokenExpiresIn as const,
     };
-    return jwt.sign(payload, authConfig.secret, options); // genere un token avec l'utilisateur , le secret , et le temps d'expiration
+    return jwt.sign(payload, authConfig.secret, options);
+  }
+
+  /**
+   * Génère un refresh token JWT pour un utilisateur (longue durée: 7 jours)
+   */
+  static generateRefreshToken(user: TokenPayload): string {
+    const payload = {
+      id: user.id,
+      email: user.email,
+      type: "refresh", // Marque ce token comme refresh token
+    };
+
+    const options: SignOptions = {
+      expiresIn: authConfig.refreshTokenExpiresIn as const,
+    };
+    return jwt.sign(payload, authConfig.secret, options);
+  }
+
+  /**
+   * Génère les deux tokens (access et refresh) pour un utilisateur
+   */
+  static generateTokens(user: TokenPayload): {
+    accessToken: string;
+    refreshToken: string;
+  } {
+    return {
+      accessToken: this.generateAccessToken(user),
+      refreshToken: this.generateRefreshToken(user),
+    };
   }
 
   /**
@@ -45,6 +74,29 @@ export class TokenService {
       return jwt.verify(token, authConfig.secret) as DecodedToken;
     } catch (error) {
       console.error("Erreur de vérification du token:", error);
+      return null;
+    }
+  }
+
+  /**
+   * Vérifie et décode un refresh token JWT
+   * @returns Le token décodé si valide, null si invalide
+   */
+  static verifyRefreshToken(token: string): DecodedToken | null {
+    try {
+      const decoded = jwt.verify(token, authConfig.secret) as DecodedToken & {
+        type?: string;
+      };
+
+      // Vérifier que c'est bien un refresh token
+      if (decoded.type !== "refresh") {
+        console.error("Ce n'est pas un refresh token");
+        return null;
+      }
+
+      return decoded;
+    } catch (error) {
+      console.error("Erreur de vérification du refresh token:", error);
       return null;
     }
   }

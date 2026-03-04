@@ -1,49 +1,50 @@
 import { Low } from "lowdb";
 import { JSONFile } from "lowdb/node";
-import fs from "fs/promises";
 
-type DBObject = {
-  id?: number | string;
-};
-
-type DatabaseSchema = {
-  users: DBObject[];
+// Type générique pour les données
+type DatabaseData = {
+  users: any[];
+  contrats: any[];
 };
 
 // Default data for the database
-const defaultData: DatabaseSchema = {
+const defaultData: DatabaseData = {
   users: [],
+  contrats: [],
 };
 
-class DBprocess<T extends DBObject> {
-  private db: Low<DatabaseSchema> | null = null;
-  private collectionName: keyof DatabaseSchema = "users";
+class DBprocess<T = any> {
+  private db: Low<DatabaseData> | null = null;
+  private collection: "users" | "contrats" = "users";
 
   /**
    * Initialise la connexion à la base de données lowdb
    * @param filePath - Chemin vers le fichier JSON
-   * @param collection - Nom de la collection (table)
+   * @param collection - Nom de la collection (users ou contrats)
    */
   async init(
     filePath: string,
-    collection: keyof DatabaseSchema = "users",
+    collection: "users" | "contrats" = "users",
   ): Promise<void> {
-    const adapter = new JSONFile<DatabaseSchema>(filePath);
-    this.db = new Low<DatabaseSchema>(adapter, defaultData);
-    this.collectionName = collection;
+    const adapter = new JSONFile<DatabaseData>(filePath);
+    this.db = new Low<DatabaseData>(adapter, defaultData);
+    this.collection = collection;
     await this.db.read();
 
-    // Ensure the collection exists
-    if (!this.db.data[collection]) {
-      this.db.data[collection] = [];
-      await this.db.write();
+    // Ensure collections exist
+    if (!this.db.data.users) {
+      this.db.data.users = [];
     }
+    if (!this.db.data.contrats) {
+      this.db.data.contrats = [];
+    }
+    await this.db.write();
   }
 
   /**
    * Assure que la base de données est initialisée
    */
-  private async ensureDb(): Promise<Low<DatabaseSchema>> {
+  private async ensureDb(): Promise<Low<DatabaseData>> {
     if (!this.db) {
       throw new Error("Database not initialized. Call init() first.");
     }
@@ -53,41 +54,67 @@ class DBprocess<T extends DBObject> {
 
   /**
    * Lit toutes les données de la collection
-   * @returns Tableau de données
    */
   async readData(): Promise<T[]> {
     const db = await this.ensureDb();
-    return db.data[this.collectionName] as T[];
+    return db.data[this.collection] as T[];
   }
 
   /**
-   * Écrit toutes les données dans la collection (écrase le contenu)
-   * @param data - Données à écrire
+   * Lit toutes les données (toutes les collections)
+   */
+  async readAllData(): Promise<DatabaseData> {
+    const db = await this.ensureDb();
+    return db.data;
+  }
+
+  /**
+   * Écrit toutes les données dans la collection
    */
   async writeData(data: T[]): Promise<void> {
     const db = await this.ensureDb();
-    db.data[this.collectionName] = data;
+    (db.data[this.collection] as any) = data;
+    await db.write();
+  }
+
+  /**
+   * Écrit toutes les données
+   */
+  async writeAllData(data: DatabaseData): Promise<void> {
+    const db = await this.ensureDb();
+    db.data = data;
     await db.write();
   }
 
   /**
    * Ajoute de nouvelles données à la collection
-   * @param newData - Données à ajouter
    */
   async createData(newData: T): Promise<T> {
     const db = await this.ensureDb();
-    const collection = db.data[this.collectionName] as T[];
+    const collection = db.data[this.collection] as any[];
 
     // Generate new ID if not provided
     if (!newData.id) {
-      const maxId = collection.reduce((max, item) => {
-        const itemId =
-          typeof item.id === "number"
-            ? item.id
-            : parseInt(item.id as string, 10);
-        return itemId > max ? itemId : max;
-      }, 0);
-      newData.id = maxId + 1;
+      let maxId = 0;
+      let existingIdIsNumber = false;
+
+      for (const item of collection) {
+        if (item.id !== undefined) {
+          const itemId =
+            typeof item.id === "number"
+              ? item.id
+              : parseInt(item.id as string, 10);
+          if (!isNaN(itemId)) {
+            if (typeof item.id === "number") {
+              existingIdIsNumber = true;
+            }
+            maxId = itemId > maxId ? itemId : maxId;
+          }
+        }
+      }
+
+      // Return same type as existing IDs
+      (newData as any).id = existingIdIsNumber ? maxId + 1 : String(maxId + 1);
     }
 
     collection.push(newData);
@@ -97,13 +124,11 @@ class DBprocess<T extends DBObject> {
 
   /**
    * Supprime des données par ID
-   * @param id - ID de l'élément à supprimer
    */
   async deleteById(id: string): Promise<void> {
     const db = await this.ensureDb();
-    const collection = db.data[this.collectionName] as T[];
+    const collection = db.data[this.collection] as any[];
     const index = collection.findIndex((item) => item.id?.toString() === id);
-
     if (index !== -1) {
       collection.splice(index, 1);
       await db.write();
@@ -114,43 +139,34 @@ class DBprocess<T extends DBObject> {
 
   /**
    * Met à jour des données par ID
-   * @param id - ID de l'élément à mettre à jour
-   * @param updatedData - Nouvelles données (partielles)
    */
   async updateById(id: string, updatedData: Partial<T>): Promise<T | null> {
     const db = await this.ensureDb();
-    const collection = db.data[this.collectionName] as T[];
+    const collection = db.data[this.collection] as any[];
     const index = collection.findIndex((item) => item.id?.toString() === id);
-
     if (index !== -1) {
-      // Merge existing data with new data
-      const existingItem = collection[index];
-      const updatedItem = { ...existingItem, ...updatedData } as T;
-      collection[index] = updatedItem;
+      collection[index] = { ...collection[index], ...updatedData };
       await db.write();
-      return updatedItem;
-    } else {
-      throw new Error(`L'élément avec l'id: ${id} n'existe pas`);
+      return collection[index];
     }
+    throw new Error(`L'élément avec l'id: ${id} n'existe pas`);
   }
 
   /**
    * Recherche un élément par ID
-   * @param id - ID de l'élément à rechercher
    */
   async findById(id: string): Promise<T | null> {
     const db = await this.ensureDb();
-    const collection = db.data[this.collectionName] as T[];
+    const collection = db.data[this.collection] as any[];
     return collection.find((item) => item.id?.toString() === id) || null;
   }
 
   /**
    * Recherche des éléments par critère
-   * @param predicate - Fonction de recherche
    */
   async findBy(predicate: (item: T) => boolean): Promise<T[]> {
     const db = await this.ensureDb();
-    const collection = db.data[this.collectionName] as T[];
+    const collection = db.data[this.collection] as T[];
     return collection.filter(predicate);
   }
 }
