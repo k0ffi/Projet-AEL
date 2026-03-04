@@ -4,11 +4,14 @@ import type { user } from "../models/user.js";
 import bcrypt from "bcrypt";
 import path from "path";
 
-// Chemin vers le fichier JSON
-const DB_PATH = path.join(__dirname, "..", "data", "db.json");
+// Chemin vers le fichier JSON par défaut (production)
+const DEFAULT_DB_PATH = path.join(__dirname, "..", "data", "db.json");
 
 // Instance du service de base de données
-const db = new DBprocess<user>();
+export const db = new DBprocess<user>();
+
+// Initialiser la base de données lowdb au démarrage
+db.init(DEFAULT_DB_PATH, "users").catch(console.error);
 
 /**
  * UserController - Gère les opérations CRUD pour les utilisateurs
@@ -19,7 +22,7 @@ export class UserController {
    */
   static async getAllUsers(req: Request, res: Response): Promise<void> {
     try {
-      const users = await db.readData(DB_PATH);
+      const users = await db.readData();
       // Ne pas retourner les mots de passe
       const usersWithoutPassword = users.map(({ password, ...user }) => user);
       res.json(usersWithoutPassword);
@@ -41,7 +44,7 @@ export class UserController {
         return;
       }
 
-      const user = await db.findById(DB_PATH, id);
+      const user = await db.findById(id);
 
       if (!user) {
         res.status(404).json({ error: "Utilisateur non trouvé" });
@@ -67,16 +70,14 @@ export class UserController {
 
       // Vérification des champs requis
       if (!nom || !prenom || !email || !password) {
-        res
-          .status(400)
-          .json({
-            error: "Tous les champs sont requis (nom, prenom, email, password)",
-          });
+        res.status(400).json({
+          error: "Tous les champs sont requis (nom, prenom, email, password)",
+        });
         return;
       }
 
       // Vérifier si l'email existe déjà
-      const existingUsers = await db.findBy(DB_PATH, (u) => u.email === email);
+      const existingUsers = await db.findBy((u) => u.email === email);
       if (existingUsers.length > 0) {
         res.status(409).json({ error: "Cet email est déjà utilisé" });
         return;
@@ -95,7 +96,7 @@ export class UserController {
         token: null,
       };
 
-      const createdUser = await db.createData(DB_PATH, newUser);
+      const createdUser = await db.createData(newUser);
 
       // Ne pas retourner le mot de passe
       const { password: _, ...userWithoutPassword } = createdUser;
@@ -121,7 +122,7 @@ export class UserController {
       const { nom, prenom, date_naissance, email, password } = req.body;
 
       // Vérifier si l'utilisateur existe
-      const existingUser = await db.findById(DB_PATH, id);
+      const existingUser = await db.findById(id);
       if (!existingUser) {
         res.status(404).json({ error: "Utilisateur non trouvé" });
         return;
@@ -136,7 +137,6 @@ export class UserController {
       if (email) {
         // Vérifier si le nouvel email n'est pas déjà utilisé par un autre utilisateur
         const existingUsers = await db.findBy(
-          DB_PATH,
           (u) => u.email === email && u.id !== id,
         );
         if (existingUsers.length > 0) {
@@ -149,7 +149,7 @@ export class UserController {
         updateData.password = await bcrypt.hash(password, 10);
       }
 
-      const updatedUser = await db.updateById(DB_PATH, id, updateData);
+      const updatedUser = await db.updateById(id, updateData);
 
       if (!updatedUser) {
         res.status(404).json({ error: "Utilisateur non trouvé" });
@@ -178,13 +178,13 @@ export class UserController {
       }
 
       // Vérifier si l'utilisateur existe
-      const existingUser = await db.findById(DB_PATH, id);
+      const existingUser = await db.findById(id);
       if (!existingUser) {
         res.status(404).json({ error: "Utilisateur non trouvé" });
         return;
       }
 
-      await db.deleteById(DB_PATH, id);
+      await db.deleteById(id);
       res.json({ message: "Utilisateur supprimé avec succès" });
     } catch (error) {
       res
@@ -206,7 +206,7 @@ export class UserController {
       }
 
       // Rechercher l'utilisateur par email
-      const users = await db.findBy(DB_PATH, (u) => u.email === email);
+      const users = await db.findBy((u) => u.email === email);
       const user = users[0];
 
       if (!user) {

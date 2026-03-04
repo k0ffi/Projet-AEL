@@ -1,1 +1,22 @@
-{ "users": [] }
+{
+  "users": [
+    {
+      "id": "1772617883014",
+      "nom": "Nouveau",
+      "prenom": "User",
+      "date_naissance": "2000-01-01T00:00:00.000Z",
+      "email": "nouveau@test.com",
+      "password": "$2b$10$0jXmsV7/ufA7FUB9OSm8nekY/UkixJ8m0U/txXqr6MIs2bS4W2ABC",
+      "token": null
+    },
+    {
+      "id": "1772617883120",
+      "nom": "Dupont",
+      "prenom": "Jean",
+      "date_naissance": "1990-01-15T00:00:00.000Z",
+      "email": "jean@test.com",
+      "password": "$2b$10$7RwaiZUsQ56MW0j4YClTR.nYBa9o0iRr3kgNX/AciaP3v255y8chO",
+      "token": null
+    }
+  ]
+}
