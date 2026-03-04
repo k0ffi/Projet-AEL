@@ -4,7 +4,8 @@ import {
   authenticateToken,
   type AuthRequest,
 } from "./middlewares/auth.middleware.js";
-import { TokenService, type TokenPayload } from "./services/token.service.js";
+import { TokenService } from "./services/token.service.js";
+import userRoutes from "./routes/user.routes.js";
 
 const app = express();
 const PORT = 3000;
@@ -28,42 +29,11 @@ app.get("/api/test", (req, res) => {
   res.json({ message: "Sucess !!" });
 });
 
-/**
- * EXEMPLE: Route de login pour générer un token
- */
-app.post("/api/login", (req, res) => {
-  const { email, password } = req.body;
-
-  // TODO: Vérifier les credentials dans la base de données
-  // Pour l'exemple, on simule un utilisateur valide
-  if (email && password) {
-    const userPayload: TokenPayload = {
-      id: "1",
-      email: email,
-      nom: "Doe",
-      prenom: "John",
-    };
-
-    // Générer le token
-    const token = TokenService.generateToken(userPayload);
-
-    res.json({
-      message: "Connexion réussie",
-      token: token,
-      user: {
-        id: userPayload.id,
-        email: userPayload.email,
-        nom: userPayload.nom,
-        prenom: userPayload.prenom,
-      },
-    });
-  } else {
-    res.status(400).json({ error: "Email et mot de passe requis" });
-  }
-});
+// Routes des utilisateurs
+app.use(userRoutes);
 
 /**
- * EXEMPLE: Route protégée - nécessite un token valide
+ * Route protégée - nécessite un token valide
  */
 app.get("/api/profile", authenticateToken, (req: AuthRequest, res) => {
   // req.user contient les informations du token
@@ -74,7 +44,7 @@ app.get("/api/profile", authenticateToken, (req: AuthRequest, res) => {
 });
 
 /**
- * EXEMPLE: Route pour vérifier si un token est expiré
+ * Route pour vérifier si un token est expiré
  */
 app.get("/api/token-status", authenticateToken, (req: AuthRequest, res) => {
   const authHeader = req.headers["authorization"] as string;
@@ -91,10 +61,11 @@ app.get("/api/token-status", authenticateToken, (req: AuthRequest, res) => {
 app.listen(PORT, () => {
   console.log(`Serveur démarré sur le port ${PORT}`);
   console.log(`URL: http://localhost:${PORT}`);
-  console.log(`\n Routes d'authentification:`);
-  console.log(`  POST /api/login    - Pour obtenir un token`);
-  console.log(
-    `  GET  /api/profile   - Route protégée (需 Authorization: Bearer <token>)`,
-  );
-  console.log(`  GET  /api/token-status - Vérifier le statut du token`);
+  console.log(`\n Routes disponibles:`);
+  console.log(`  POST /api/users/register - Inscription`);
+  console.log(`  POST /api/users/login    - Connexion`);
+  console.log(`  GET  /api/users          - Liste utilisateurs (protégé)`);
+  console.log(`  GET  /api/users/:id      - Détail utilisateur (protégé)`);
+  console.log(`  PUT  /api/users/:id      - Modifier utilisateur (protégé)`);
+  console.log(`  DELETE /api/users/:id    - Supprimer utilisateur (protégé)`);
 });
