@@ -30,8 +30,8 @@ export class TokenService {
       prenom: user.prenom,
     };
 
-    const options: SignOptions = {
-      expiresIn: authConfig.accessTokenExpiresIn as const,
+    const options = {
+      expiresIn: authConfig.accessTokenExpiresIn as any,
     };
     return jwt.sign(payload, authConfig.secret, options);
   }
@@ -46,8 +46,8 @@ export class TokenService {
       type: "refresh", // Marque ce token comme refresh token
     };
 
-    const options: SignOptions = {
-      expiresIn: authConfig.refreshTokenExpiresIn as const,
+    const options = {
+      expiresIn: authConfig.refreshTokenExpiresIn as any,
     };
     return jwt.sign(payload, authConfig.secret, options);
   }
