@@ -2,13 +2,16 @@
 
 ## Objectif
 
-Créer un système complet de gestion des tokens JWT pour identifier et authentifier les utilisateurs.
+Créer un système complet de gestion des tokens JWT pour identifier et authentifier les utilisateurs avec access token et refresh token.
 
 ## ✅ Étapes RÉALISÉES et TESTÉES
 
 ### ✅ 1. Configuration de la clé secrète
 
 - [x] Ajouter une clé secrète forte dans `auth.config.ts`
+- [x] Configurer les durées d'expiration séparées:
+  - Access token: 15 minutes
+  - Refresh token: 7 jours
 
 ### ✅ 2. Correction du Middleware d'authentification
 
@@ -18,41 +21,40 @@ Créer un système complet de gestion des tokens JWT pour identifier et authenti
 ### ✅ 3. Création d'un service de token
 
 - [x] Créer `token.service.ts` avec:
-  - Fonction `generateToken(user)` pour créer un token
-  - Fonction `verifyToken(token)` pour valider un token
+  - Fonction `generateAccessToken(user)` pour créer un access token (15 min)
+  - Fonction `generateRefreshToken(user)` pour créer un refresh token (7 jours)
+  - Fonction `generateTokens(user)` pour créer les deux tokens
+  - Fonction `verifyToken(token)` pour valider un access token
+  - Fonction `verifyRefreshToken(token)` pour valider un refresh token
   - Fonction `decodeToken(token)` pour extraire les données
   - Fonction `isTokenExpired(token)` pour vérifier l'expiration
 
-### ✅ 4. Création d'un exemple de route de login
+### ✅ 4. Création des routes d'authentification
 
-- [x] Créer une route `/api/login` qui génère et retourne un token
+- [x] Route `/api/auth/refresh` - Rafraîchir l'access token
+- [x] Route `/api/auth/logout` - Déconnexion (invalider le refresh token)
 
-### ✅ 5. Création d'une route protégée
+### ✅ 5. Modification du login
 
-- [x] Créer une route `/api/profile` protégée par le middleware
+- [x] Login retourne maintenant access token et refresh token
+- [x] Le refresh token est stocké dans la base de données
 
-### ✅ 6. TESTS RÉUSSIS
+## Fonctionnement du système
 
-- [x] Login → Retourne un token valide
-- [x] Route protégée avec token → Accès autorisé
-- [x] Route protégée sans token → Accès refusé (401)
-
-## Fichiers modifiés/créés
-
-- ✅ `backEnd/APIs/src/config/auth.config.ts` - Clé secrète ajoutée
-- ✅ `backEnd/APIs/src/middleware/auth.middleware.ts` - Middleware corrigé et fonctionnel
-- ✅ `backEnd/APIs/src/services/token.service.ts` - NOUVEAU: Service complet de gestion des tokens
-- ✅ `backEnd/APIs/src/serveur.ts` - Routes de login et profile ajoutées
-- ✅ `backEnd/APIs/src/process/db-process.ts` - **NON MODIFIÉ** (comme demandé)
-
-## Comment utiliser le système
-
-### 1. Login pour obtenir un token
+### 1. Inscription (`POST /api/users/register`)
 
 ```bash
-curl -X POST http://localhost:3000/api/login \
+curl -X POST http://localhost:3000/api/users/register \
   -H "Content-Type: application/json" \
-  -d '{"email": "test@example.com", "password": "motdepasse"}'
+  -d '{"nom": "Dupont", "prenom": "Jean", "email": "jean@test.com", "password": "motdepasse"}'
+```
+
+### 2. Connexion (`POST /api/users/login`)
+
+```bash
+curl -X POST http://localhost:3000/api/users/login \
+  -H "Content-Type: application/json" \
+  -d '{"email": "jean@test.com", "password": "motdepasse"}'
 ```
 
 **Réponse:**
@@ -60,18 +62,73 @@ curl -X POST http://localhost:3000/api/login \
 ```json
 {
   "message": "Connexion réussie",
-  "token": "eyJhbGciOiJIUzI1NiIs...",
+  "accessToken": "eyJhbGciOiJIUzI1NiIs...",
+  "refreshToken": "eyJhbGciOiJIUzI1NiIs...",
   "user": { "id": "1", "email": "...", "nom": "...", "prenom": "..." }
 }
 ```
 
-### 2. Accéder à une route protégée
+### 3. Accéder à une route protégée
 
 ```bash
-curl http://localhost:3000/api/profile \
-  -H "Authorization: Bearer <votre-token>"
+curl http://localhost:3000/api/users \
+  -H "Authorization: Bearer <accessToken>"
 ```
 
-## db-process.ts reste INCHANGÉ
+### 4. Rafraîchir l'access token (`POST /api/auth/refresh`)
 
-Le fichier `db-process.ts` n'a pas été modifié et continue à fonctionner normalement pour les opérations CRUD sur la base de données JSON.
+Quand l'access token expire (après 15 minutes), utilisez le refresh token pour obtenir un nouveau access token:
+
+```bash
+curl -X POST http://localhost:3000/api/auth/refresh \
+  -H "Content-Type: application/json" \
+  -d '{"refreshToken": "<votre-refresh-token>"}'
+```
+
+**Réponse:**
+
+```json
+{
+  "message": "Token rafraîchi avec succès",
+  "accessToken": "eyJhbGciOiJIUzI1NiIs..."
+}
+```
+
+### 5. Déconnexion (`POST /api/auth/logout`)
+
+```bash
+curl -X POST http://localhost:3000/api/auth/logout \
+  -H "Authorization: Bearer <accessToken>"
+```
+
+**Réponse:**
+
+```json
+{
+  "message": "Déconnexion réussie"
+}
+```
+
+## Sécurité
+
+### Bonnes pratiques implémentées:
+
+1. **Access token de courte durée (15 min)**: Réduit le risque en cas de vol de token
+2. **Refresh token de longue durée (7 jours)**: Permet une connexion prolongée sans إعادة saisie
+3. **Stockage du refresh token en base**: Permet l'invalidation à la déconnexion
+4. **Vérification du refresh token**: Le serveur vérifie que le refresh token correspond à celui stocké
+
+### Stockage côté client (recommandations pour le frontend Angular):
+
+- **Access token**: Stocker en mémoire (dans un service Angular)
+- **Refresh token**: Stocker dans un cookie HTTP Only (plus sécurisé)
+
+## Fichiers modifiés/créés
+
+- ✅ `backEnd/APIs/src/config/auth.config.ts` - Configuration avec durées d'expiration séparées
+- ✅ `backEnd/APIs/src/middlewares/auth.middleware.ts` - Middleware d'authentification
+- ✅ `backEnd/APIs/src/services/token.service.ts` - Service complet avec access et refresh tokens
+- ✅ `backEnd/APIs/src/models/user.ts` - Modèle utilisateur avec champ refreshToken
+- ✅ `backEnd/APIs/src/controllers/user.controller.ts` - Login, refresh et logout
+- ✅ `backEnd/APIs/src/routes/auth.routes.ts` - NOUVEAU: Routes d'authentification
+- ✅ `backEnd/APIs/src/serveur.ts` - Enregistrement des nouvelles routes
