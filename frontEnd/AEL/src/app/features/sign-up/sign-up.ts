@@ -14,8 +14,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTableModule } from '@angular/material/table';
-import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { Datepicker } from '../../shared/components/date-piker/date-piker';
+import { SuccessSnackbarComponent } from '../../shared/components/success-snackbar/success-snackbar';
+import { ErrorSnackbarComponent } from '../../shared/components/error-snackbar/error-snackbar';
 import { AuthService } from '../../core/services/auth.service';
 import { Router } from '@angular/router';
 
@@ -31,10 +32,17 @@ import { Router } from '@angular/router';
     MatCardModule,
     MatDatepickerModule,
     MatTableModule,
-    MatSnackBarModule,
     Datepicker,
+    SuccessSnackbarComponent,
+    ErrorSnackbarComponent,
   ],
   template: `
+    <div class="snackbar-container">
+      <app-success-snackbar *ngIf="showSuccess" [data]="successData" (onClose)="closeSuccess()">
+      </app-success-snackbar>
+      <app-error-snackbar *ngIf="showError" [data]="errorData" (onClose)="closeError()">
+      </app-error-snackbar>
+    </div>
     <mat-card class="sign-up-card">
       <mat-card-title><span class="title">Création de Compte</span></mat-card-title>
 
@@ -135,6 +143,14 @@ import { Router } from '@angular/router';
       align-items: center;
       justify-content: center;
       padding: 50px 10px;
+      position: relative;
+    }
+
+    .snackbar-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
     }
 
     mat-card-title {
@@ -208,11 +224,16 @@ import { Router } from '@angular/router';
 export class SignUp {
   private _formBuilder = inject(FormBuilder);
   private authService = inject(AuthService);
-  private snackBar = inject(MatSnackBar);
   private router = inject(Router);
 
   displayedColumns: string[] = ['label', 'value'];
   isLoading = false;
+
+  // Snackbar states
+  showSuccess = false;
+  showError = false;
+  successData: any;
+  errorData: any;
 
   firstFormGroup = this._formBuilder.group({
     nom: ['', Validators.required],
@@ -240,6 +261,14 @@ export class SignUp {
     ];
   }
 
+  closeSuccess() {
+    this.showSuccess = false;
+  }
+
+  closeError() {
+    this.showError = false;
+  }
+
   onSubmit() {
     if (!this.firstFormGroup.valid || !this.secondFormGroup.valid) {
       return;
@@ -258,24 +287,20 @@ export class SignUp {
     this.authService.register(userData).subscribe({
       next: (response) => {
         this.isLoading = false;
-        this.snackBar.open('Compte créé avec succès !', 'Fermer', {
-          duration: 3000,
-          horizontalPosition: 'center',
-          verticalPosition: 'bottom',
-          panelClass: ['success-snackbar'],
-        });
+        this.showSuccess = true;
+        this.successData = { message: 'Compte créé avec succès !' };
+        // Auto-hide after 3 seconds
+        setTimeout(() => (this.showSuccess = false), 3000);
         // Rediriger vers la page de connexion
         this.router.navigate(['/']);
       },
       error: (error) => {
         this.isLoading = false;
         const errorMessage = error.error?.error || 'Erreur lors de la création du compte';
-        this.snackBar.open(errorMessage, 'Fermer', {
-          duration: 5000,
-          horizontalPosition: 'center',
-          verticalPosition: 'bottom',
-          panelClass: ['error-snackbar'],
-        });
+        this.showError = true;
+        this.errorData = { message: errorMessage };
+        // Auto-hide after 5 seconds
+        setTimeout(() => (this.showError = false), 5000);
       },
     });
   }

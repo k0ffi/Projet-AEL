@@ -46,6 +46,7 @@ import { AuthService } from '../../core/services/auth.service';
             class="btn-connect"
             [disabled]="!form.valid"
             [style.background-color]="form.valid ? '#3f51b5' : '#cccccc'"
+            [style.color]="form.valid ? 'white' : 'white'"
             (click)="connexion()"
           >
             SE CONNECTER
@@ -130,7 +131,7 @@ export class Login {
             duration: 3000,
             panelClass: ['success-snackbar'],
           });
-          this.router.navigate(['/dashboard']);
+          this.router.navigate(['/accueil']);
         },
         error: (error) => {
           console.error('Erreur de connexion:', error);

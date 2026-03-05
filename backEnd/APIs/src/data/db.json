@@ -72,6 +72,17 @@
       "token": null,
       "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE3NzI3NDUwNzI3MjMiLCJlbWFpbCI6InVzZXIwMUB0b3RvLmZyIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3NzI3NDUwOTIsImV4cCI6MTc3MzM0OTg5Mn0.HKRtOsz_JBNBgEaPrUK3GKf01O49Ti4rpYyzkYAgcVs",
       "contrats": []
+    },
+    {
+      "id": "1772746899821",
+      "nom": "mario",
+      "prenom": "zeze",
+      "date_naissance": "2026-03-03T23:00:00.000Z",
+      "email": "djawoukoffimario@gmail.com",
+      "password": "$2b$10$lsMsoPPNvD5Z7jKgu1BKyuwwkBI4Z5ESy/.0e3wJr/ibS0L8823qO",
+      "token": null,
+      "refreshToken": null,
+      "contrats": []
     }
   ],
   "contrats": []

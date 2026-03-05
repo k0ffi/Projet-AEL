@@ -26,6 +26,7 @@ export class AuthService {
       .pipe(
         tap((response: any) => {
           this.accessToken = response.accessToken;
+          localStorage.setItem('accessToken', response.accessToken);
           this.isLoggedInSubject.next(true);
         }),
         shareReplay(1),
@@ -51,10 +52,15 @@ export class AuthService {
   }
 
   /**
-   * Récupère l'access token stocké
+   * Récupère l'access token stocké (depuis la mémoire ou localStorage)
    */
   public getAccessToken(): string | null {
-    return this.accessToken;
+    // D'abord vérifier en mémoire
+    if (this.accessToken) {
+      return this.accessToken;
+    }
+    // Sinon vérifier dans localStorage
+    return localStorage.getItem('accessToken');
   }
 
   /**
@@ -63,6 +69,7 @@ export class AuthService {
   public logout(): void {
     const token = this.accessToken;
     this.accessToken = null;
+    localStorage.removeItem('accessToken');
     this.isLoggedInSubject.next(false);
 
     if (token) {
@@ -98,6 +105,7 @@ export class AuthService {
     return this.http.post(`${API_URL}/api/auth/refresh`, {}, { withCredentials: true }).pipe(
       tap((response: any) => {
         this.accessToken = response.accessToken;
+        localStorage.setItem('accessToken', response.accessToken);
       }),
       shareReplay(1),
       catchError((error) => {
