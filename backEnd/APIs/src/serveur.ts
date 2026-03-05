@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import cookieParser from "cookie-parser";
 import {
   authenticateToken,
   type AuthRequest,
@@ -20,12 +21,16 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 
+// Middleware pour parser les cookies (nécessaire pour HttpOnly cookies)
+app.use(cookieParser());
+
 // Les Autorisations CORS pour le Front
 app.use(
   cors({
-    origin: "http://localhost:4200",
+    origin: true, // Permet toutes les origines avec credentials
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"],
+    exposedHeaders: ["Content-Length", "X-Requested-With"],
     credentials: true,
   }),
 );

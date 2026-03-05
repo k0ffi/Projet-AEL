@@ -61,6 +61,17 @@
       "token": null,
       "refreshToken": null,
       "contrats": []
+    },
+    {
+      "id": "1772745072723",
+      "nom": "user01",
+      "prenom": "user01",
+      "date_naissance": "2026-02-28T23:00:00.000Z",
+      "email": "user01@toto.fr",
+      "password": "$2b$10$g713AUQgCMdUy/Wrt26ejuqNFVkT0U.EMOqXyjnpZFTQ8nZ.OANba",
+      "token": null,
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE3NzI3NDUwNzI3MjMiLCJlbWFpbCI6InVzZXIwMUB0b3RvLmZyIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3NzI3NDUwOTIsImV4cCI6MTc3MzM0OTg5Mn0.HKRtOsz_JBNBgEaPrUK3GKf01O49Ti4rpYyzkYAgcVs",
+      "contrats": []
     }
   ],
   "contrats": []
