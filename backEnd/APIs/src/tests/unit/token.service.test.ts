@@ -14,7 +14,7 @@ describe("TokenService", () => {
 
   describe("generateToken", () => {
     it("devrait générer un token JWT valide", () => {
-      const token = TokenService.generateToken(validPayload);
+      const token = TokenService.generateAccessToken(validPayload);
 
       expect(token).toBeDefined();
       expect(typeof token).toBe("string");
@@ -22,7 +22,7 @@ describe("TokenService", () => {
     });
 
     it("devrait inclure les informations utilisateur dans le token", () => {
-      const token = TokenService.generateToken(validPayload);
+      const token = TokenService.generateAccessToken(validPayload);
       const decoded = TokenService.decodeToken(token);
 
       expect(decoded).not.toBeNull();
@@ -35,7 +35,7 @@ describe("TokenService", () => {
 
   describe("verifyToken", () => {
     it("devrait retourner le token décodé si valide", () => {
-      const token = TokenService.generateToken(validPayload);
+      const token = TokenService.generateAccessToken(validPayload);
       const decoded = TokenService.verifyToken(token);
 
       expect(decoded).not.toBeNull();
@@ -50,7 +50,7 @@ describe("TokenService", () => {
     });
 
     it("devrait retourner null si token modifié", () => {
-      const token = TokenService.generateToken(validPayload);
+      const token = TokenService.generateAccessToken(validPayload);
       const modifiedToken = token.slice(0, -5) + "xxxxx";
       const decoded = TokenService.verifyToken(modifiedToken);
 
@@ -60,7 +60,7 @@ describe("TokenService", () => {
 
   describe("decodeToken", () => {
     it("devrait décoder le token sans vérifier la signature", () => {
-      const token = TokenService.generateToken(validPayload);
+      const token = TokenService.generateAccessToken(validPayload);
       const decoded = TokenService.decodeToken(token);
 
       expect(decoded).not.toBeNull();
@@ -76,7 +76,7 @@ describe("TokenService", () => {
 
   describe("isTokenExpired", () => {
     it("devrait retourner false pour un token valide", () => {
-      const token = TokenService.generateToken(validPayload);
+      const token = TokenService.generateAccessToken(validPayload);
       const isExpired = TokenService.isTokenExpired(token);
 
       expect(isExpired).toBe(false);
@@ -106,12 +106,12 @@ describe("TokenService", () => {
 
   describe("getTimeUntilExpiration", () => {
     it("devrait retourner le temps restant en secondes pour un token valide", () => {
-      const token = TokenService.generateToken(validPayload);
+      const token = TokenService.generateAccessToken(validPayload);
       const timeLeft = TokenService.getTimeUntilExpiration(token);
 
-      // Devrait être proche de 3600 secondes (1 heure)
-      expect(timeLeft).toBeGreaterThan(3500);
-      expect(timeLeft).toBeLessThanOrEqual(3600);
+      // Devrait être proche de 900 secondes (15 minutes)
+      expect(timeLeft).toBeGreaterThan(800);
+      expect(timeLeft).toBeLessThanOrEqual(900);
     });
 
     it("devrait retourner 0 pour un token expiré", () => {

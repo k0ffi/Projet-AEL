@@ -19,7 +19,7 @@
       "password": "$2b$10$7RwaiZUsQ56MW0j4YClTR.nYBa9o0iRr3kgNX/AciaP3v255y8chO",
       "token": null,
       "contrats": [],
-      "refreshToken": null
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE3NzI2MTc4ODMxMjAiLCJlbWFpbCI6ImplYW5AdGVzdC5jb20iLCJ0eXBlIjoicmVmcmVzaCIsImlhdCI6MTc3MjcyMDg3NywiZXhwIjoxNzczMzI1Njc3fQ._mvoPE1OX9ysNk1pP6X9T5bynkAYepWqZKXo82-qjuw"
     },
     {
       "id": "1772637232211",
@@ -49,6 +49,17 @@
       "email": "mario.email@test.com",
       "password": "$2b$10$uCv/KNljH2h4sEbzmT9nK.X6JSExiCQcLQ3JyT4UNnoSB.FFx5q1G",
       "token": null,
+      "contrats": []
+    },
+    {
+      "id": "1772720877174",
+      "nom": "Test",
+      "prenom": "User",
+      "date_naissance": null,
+      "email": "testuser@test.com",
+      "password": "$2b$10$1FSdEG9f1jBI/ndNXOXBduYQz0lb8XINeC4sJgpVQkY3mMbnHOl7C",
+      "token": null,
+      "refreshToken": null,
       "contrats": []
     }
   ],

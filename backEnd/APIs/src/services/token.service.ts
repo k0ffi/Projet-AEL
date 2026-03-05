@@ -11,8 +11,8 @@ export interface TokenPayload {
 
 // Interface pour le token décodé (avec les données standard JWT)
 export interface DecodedToken extends TokenPayload {
-  iat: number; // Issued At
-  exp: number; // Expiration Time
+  iat: number; // temps d'émission
+  exp: number; // temps d'expiration
 }
 
 /**

@@ -5,12 +5,16 @@ import {
   type AuthRequest,
 } from "./middlewares/auth.middleware.js";
 import { TokenService } from "./services/token.service.js";
+import { loggerMiddleware } from "./middlewares/logger.middleware.js";
 import userRoutes from "./routes/user.routes.js";
 import contratRoutes from "./routes/contrat.routes.js";
 import authRoutes from "./routes/auth.routes.js";
 
 const app = express();
 const PORT = 3000;
+
+// Middleware de logging - Doit être défini AVANT les autres middlewares
+app.use(loggerMiddleware);
 
 app.use(express.json());
 
