@@ -15,6 +15,11 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTableModule } from '@angular/material/table';
 import { Datepicker } from '../../shared/components/date-piker/date-piker';
+import { SuccessSnackbarComponent } from '../../shared/components/success-snackbar/success-snackbar';
+import { ErrorSnackbarComponent } from '../../shared/components/error-snackbar/error-snackbar';
+import { AuthService } from '../../core/services/auth.service';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-sign-up',
   imports: [
@@ -28,8 +33,16 @@ import { Datepicker } from '../../shared/components/date-piker/date-piker';
     MatDatepickerModule,
     MatTableModule,
     Datepicker,
+    SuccessSnackbarComponent,
+    ErrorSnackbarComponent,
   ],
   template: `
+    <div class="snackbar-container">
+      <app-success-snackbar *ngIf="showSuccess" [data]="successData" (onClose)="closeSuccess()">
+      </app-success-snackbar>
+      <app-error-snackbar *ngIf="showError" [data]="errorData" (onClose)="closeError()">
+      </app-error-snackbar>
+    </div>
     <mat-card class="sign-up-card">
       <mat-card-title><span class="title">Création de Compte</span></mat-card-title>
 
@@ -50,7 +63,14 @@ import { Datepicker } from '../../shared/components/date-piker/date-piker';
             </div>
 
             <div class="button">
-              <button mat-button class="custom-primary-btn" matStepperNext>SUIVANT</button>
+              <button
+                mat-button
+                class="custom-primary-btn"
+                matStepperNext
+                [disabled]="!firstFormGroup.valid"
+              >
+                SUIVANT
+              </button>
             </div>
           </form>
         </mat-step>
@@ -71,7 +91,14 @@ import { Datepicker } from '../../shared/components/date-piker/date-piker';
 
             <div class="button">
               <button mat-button color="primary" matStepperPrevious>PRECEDENT</button>
-              <button mat-button class="custom-primary-btn" matStepperNext>SUIVANT</button>
+              <button
+                mat-button
+                class="custom-primary-btn"
+                matStepperNext
+                [disabled]="!secondFormGroup.valid"
+              >
+                SUIVANT
+              </button>
             </div>
           </form>
         </mat-step>
@@ -96,8 +123,13 @@ import { Datepicker } from '../../shared/components/date-piker/date-piker';
           </div>
           <div class="button">
             <button mat-button color="primary" matStepperPrevious>PRECEDENT</button>
-            <button mat-button class="custom-primary-btn" (click)="onSubmit()">
-              CREER MON COMPTE
+            <button
+              mat-button
+              class="custom-primary-btn"
+              (click)="onSubmit()"
+              [disabled]="!firstFormGroup.valid || !secondFormGroup.valid || isLoading"
+            >
+              {{ isLoading ? 'CRÉATION...' : 'CREER MON COMPTE' }}
             </button>
           </div>
         </mat-step>
@@ -111,6 +143,14 @@ import { Datepicker } from '../../shared/components/date-piker/date-piker';
       align-items: center;
       justify-content: center;
       padding: 50px 10px;
+      position: relative;
+    }
+
+    .snackbar-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
     }
 
     mat-card-title {
@@ -183,7 +223,17 @@ import { Datepicker } from '../../shared/components/date-piker/date-piker';
 })
 export class SignUp {
   private _formBuilder = inject(FormBuilder);
+  private authService = inject(AuthService);
+  private router = inject(Router);
+
   displayedColumns: string[] = ['label', 'value'];
+  isLoading = false;
+
+  // Snackbar states
+  showSuccess = false;
+  showError = false;
+  successData: any;
+  errorData: any;
 
   firstFormGroup = this._formBuilder.group({
     nom: ['', Validators.required],
@@ -192,7 +242,7 @@ export class SignUp {
   });
   secondFormGroup = this._formBuilder.group({
     email: ['', [Validators.required, Validators.email]],
-    password: ['', Validators.required],
+    password: ['', [Validators.required, Validators.minLength(6)]],
   });
   isLinear = false;
 
@@ -211,11 +261,47 @@ export class SignUp {
     ];
   }
 
+  closeSuccess() {
+    this.showSuccess = false;
+  }
+
+  closeError() {
+    this.showError = false;
+  }
+
   onSubmit() {
-    console.log('Formulaire soumis:', {
-      ...this.firstFormGroup.value,
-      ...this.secondFormGroup.value,
+    if (!this.firstFormGroup.valid || !this.secondFormGroup.valid) {
+      return;
+    }
+
+    this.isLoading = true;
+
+    const userData = {
+      nom: this.firstFormGroup.value.nom,
+      prenom: this.firstFormGroup.value.prenom,
+      date_naissance: this.firstFormGroup.value.dateDeNaissance,
+      email: this.secondFormGroup.value.email,
+      password: this.secondFormGroup.value.password,
+    };
+
+    this.authService.register(userData).subscribe({
+      next: (response) => {
+        this.isLoading = false;
+        this.showSuccess = true;
+        this.successData = { message: 'Compte créé avec succès !' };
+        // Auto-hide after 3 seconds
+        setTimeout(() => (this.showSuccess = false), 3000);
+        // Rediriger vers la page de connexion
+        this.router.navigate(['/']);
+      },
+      error: (error) => {
+        this.isLoading = false;
+        const errorMessage = error.error?.error || 'Erreur lors de la création du compte';
+        this.showError = true;
+        this.errorData = { message: errorMessage };
+        // Auto-hide after 5 seconds
+        setTimeout(() => (this.showError = false), 5000);
+      },
     });
-    alert('Compte créé avec succès!');
   }
 }

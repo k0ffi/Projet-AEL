@@ -1,33 +1,17 @@
-# TODO - Husky Setup for frontEnd/AEL
+# TODO - Dashboard Implementation
 
 ## Objectif
 
-Configurer Husky avec un pre-commit hook pour formatter et analyser le code automatiquement à chaque commit.
+Implémenter un dashboard avec 4 cards en grille 2x2:
 
-## Étapes
+- [x] 1. Analyser les fichiers existants
+- [x] 2. Créer le plan de développement
+- [x] 3. Implémenter le dashboard avec quickchart.io
+- [x] 4. Tester l'affichage
 
-- [x] 1. Installer Husky dans le projet principal
-- [x] 2. Initialiser Husky dans le projet
-- [x] 3. Configurer le pre-commit hook avec Prettier
-- [ ] 4. Tester le hook avec un commit de test
+## Détails des cards:
 
-## Détails de l'implémentation
-
-### Fichiers créés/modifiés:
-
-- `.husky/pre-commit` - Le hook qui exécute Prettier
-
-### Ce que fait le hook:
-
-- À chaque `git commit`, Husky exécute Prettier
-- Prettier formate automatiquement tous les fichiers
-- Les fichiers formatés sont ajoutés au commit
-
-### Pour tester:
-
-```bash
-git add .
-git commit -m "test husky"
-```
-
-Si le hook fonctionne, Prettier formatera vos fichiers automatiquement.
+1. **Consommation**: Graphique de consommation via quickchart.io
+2. **Facture**: Tableau 2x2 (Référence/Montant, Estimation/Moyenne)
+3. **Justificatif de domicile**: Gros icon pour les fichiers
+4. **Informations du contrat**: Résumé du contrat

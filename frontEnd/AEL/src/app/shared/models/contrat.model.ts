@@ -1,5 +1,6 @@
 /**
  * Modèle de données pour les contrats
+ * Ce modèle correspond à la structure du backend (backEnd/APIs/src/models/contrat.ts)
  */
 
 // Données de consommation pour le graphique
@@ -28,8 +29,8 @@ export interface Facture {
   date_facture?: string;
 }
 
-// Contrat complet
-export interface contrat {
+// Contrat complet (structure identique au backend)
+export interface Contrat {
   id: string;
   userId: string; // ID de l'utilisateur propriétaire du contrat
   information: InformationContrat;
@@ -40,12 +41,7 @@ export interface contrat {
 }
 
 // Type pour la création d'un nouveau contrat (sans id ni dates)
-export type CreateContratDto = Omit<
-  contrat,
-  "id" | "date_creation" | "date_modification"
->;
+export type CreateContratDto = Omit<Contrat, 'id' | 'date_creation' | 'date_modification'>;
 
 // Type pour la mise à jour d'un contrat
-export type UpdateContratDto = Partial<
-  Omit<contrat, "id" | "userId" | "date_creation">
->;
+export type UpdateContratDto = Partial<Omit<Contrat, 'id' | 'userId' | 'date_creation'>>;

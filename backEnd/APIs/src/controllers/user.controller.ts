@@ -12,7 +12,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Chemin vers le fichier JSON par défaut (production)
-const DEFAULT_DB_PATH = path.join(__dirname, "..", "data", "db.json");
+// Utilise process.cwd() pour avoir le chemin absolu depuis la racine du projet
+const DEFAULT_DB_PATH = path.join(process.cwd(), "src", "data", "db.json");
 
 // Instance du service de base de données
 export const db = new DBprocess<user>();
@@ -204,7 +205,7 @@ export class UserController {
 
   /**
    * POST /api/users/login - Connexion d'un utilisateur
-   * Retourne un access token et un refresh token
+   * Retourne un access token et envoie le refresh token en cookie HttpOnly
    */
   static async login(req: Request, res: Response): Promise<void> {
     try {
@@ -251,12 +252,19 @@ export class UserController {
 
       console.log("RefreshToken stocké");
 
+      // Envoyer le refresh token en cookie HttpOnly sécurisé
+      res.cookie("refreshToken", refreshToken, {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === "production",
+        sameSite: "lax",
+        maxAge: 7 * 24 * 60 * 60 * 1000, // 7 jours
+      });
+
       // Ne pas retourner le mot de passe
       const { password: _, ...userWithoutPassword } = user;
       res.json({
         message: "Connexion réussie",
         accessToken,
-        refreshToken,
         user: userWithoutPassword,
       });
     } catch (error) {
@@ -266,14 +274,15 @@ export class UserController {
 
   /**
    * POST /api/auth/refresh - Rafraîchir l'access token
-   * Utilise le refresh token pour obtenir un nouveau access token
+   * Lit le refresh token depuis le cookie HttpOnly
    */
   static async refresh(req: Request, res: Response): Promise<void> {
     try {
-      const { refreshToken } = req.body;
+      // Lire le refresh token depuis le cookie (envoyé automatiquement par le navigateur)
+      const refreshToken = req.cookies?.refreshToken;
 
       if (!refreshToken) {
-        res.status(400).json({ error: "Refresh token requis" });
+        res.status(400).json({ error: "Refresh token manquant" });
         return;
       }
 
@@ -320,7 +329,7 @@ export class UserController {
 
   /**
    * POST /api/auth/logout - Déconnexion de l'utilisateur
-   * Invalide le refresh token
+   * Invalide le refresh token et efface le cookie
    */
   static async logout(req: AuthRequest, res: Response): Promise<void> {
     try {
@@ -334,6 +343,9 @@ export class UserController {
 
       // Supprimer le refresh token de la base de données
       await db.updateById(userId, { refreshToken: null });
+
+      // Effacer le cookie de refresh token
+      res.clearCookie("refreshToken");
 
       res.json({ message: "Déconnexion réussie" });
     } catch (error) {

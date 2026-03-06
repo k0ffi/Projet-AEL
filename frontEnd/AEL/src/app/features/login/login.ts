@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
-import { RouterLink } from '@angular/router';
+import { RouterLink, Router } from '@angular/router';
+import { AuthService } from '../../core/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -40,7 +41,14 @@ import { RouterLink } from '@angular/router';
 
         <mat-card-actions>
           <button mat-button class="btn-create" routerLink="/inscription">CRÉE UN COMPTE</button>
-          <button mat-raised-button color="primary" class="btn-connect" (click)="connexion()">
+          <button
+            mat-raised-button
+            class="btn-connect"
+            [disabled]="!form.valid"
+            [style.background-color]="form.valid ? '#3f51b5' : '#cccccc'"
+            [style.color]="form.valid ? 'white' : 'white'"
+            (click)="connexion()"
+          >
             SE CONNECTER
           </button>
         </mat-card-actions>
@@ -92,14 +100,47 @@ import { RouterLink } from '@angular/router';
     .btn-primary {
       background-color: #3f51b5;
     }
+
+    .btn-connect:disabled {
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
   `,
 })
 export class Login {
+  constructor(
+    private authService: AuthService,
+    private router: Router,
+    private snackBar: MatSnackBar,
+  ) {}
+
   public form = new FormGroup({
-    email: new FormControl(''),
-    password: new FormControl(''),
+    email: new FormControl('', [Validators.required, Validators.email]),
+    password: new FormControl('', [Validators.required]),
     rememberMe: new FormControl(false),
   });
 
-  connexion() {}
+  connexion() {
+    const { email, password } = this.form.value;
+
+    if (email && password && this.form.valid) {
+      this.authService.login(email, password).subscribe({
+        next: (response) => {
+          console.log('Connexion réussie:', response);
+          this.snackBar.open('Connexion réussie !', 'Fermer', {
+            duration: 3000,
+            panelClass: ['success-snackbar'],
+          });
+          this.router.navigate(['/accueil']);
+        },
+        error: (error) => {
+          console.error('Erreur de connexion:', error);
+          this.snackBar.open('Email ou mot de passe incorrect', 'Fermer', {
+            duration: 3000,
+            panelClass: ['error-snackbar'],
+          });
+        },
+      });
+    }
+  }
 }

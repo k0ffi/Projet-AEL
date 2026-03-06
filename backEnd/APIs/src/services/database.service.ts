@@ -13,7 +13,7 @@ const defaultData: DatabaseData = {
   contrats: [],
 };
 
-class DBprocess<T = any> {
+class DBprocess<T extends { id?: string | number } = any> {
   private db: Low<DatabaseData> | null = null;
   private collection: "users" | "contrats" = "users";
 
