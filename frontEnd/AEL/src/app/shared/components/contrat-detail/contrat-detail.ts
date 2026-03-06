@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 import { Contrat } from '../../models/contrat.model';
 import { FactureCard } from '../facture-card/facture-card';
 import { ConsommationChart } from '../consommation-chart/consommation-chart';
@@ -15,16 +16,14 @@ import { ConsommationChart } from '../consommation-chart/consommation-chart';
     MatTabsModule,
     MatCardModule,
     MatIconModule,
+    MatListModule,
     FactureCard,
     ConsommationChart,
   ],
   template: `
     <mat-card class="contrat-detail-card">
       <mat-card-header>
-        <mat-card-title>{{ contrat.information.contrat_name }}</mat-card-title>
-        <mat-card-subtitle>
-          Ref: {{ contrat.information.reference }} - {{ contrat.information.activite }}
-        </mat-card-subtitle>
+        <mat-card-title class="title">{{ contrat.information.contrat_name }}</mat-card-title>
       </mat-card-header>
 
       <mat-card-content>
@@ -32,37 +31,38 @@ import { ConsommationChart } from '../consommation-chart/consommation-chart';
           <!-- Onglet Informations -->
           <mat-tab label="INFORMATIONS">
             <div class="tab-content">
-              <div class="info-row">
-                <mat-icon class="info-icon">description</mat-icon>
-                <div class="info-details">
-                  <span class="info-label">Référence</span>
-                  <span class="info-value">{{ contrat.information.reference }}</span>
-                </div>
-              </div>
+              <mat-list>
+                <mat-list-item>
+                  <span matListItemTitle class="info-label">Référence</span>
+                  <span matListItemLine class="info-value">{{
+                    contrat.information.reference
+                  }}</span>
+                </mat-list-item>
 
-              <div class="info-row">
-                <mat-icon class="info-icon">business</mat-icon>
-                <div class="info-details">
-                  <span class="info-label">Activité</span>
-                  <span class="info-value">{{ contrat.information.activite }}</span>
-                </div>
-              </div>
+                <mat-list-item>
+                  <span matListItemTitle class="info-label">Nom du contrat</span>
+                  <span matListItemLine class="info-value">{{
+                    contrat.information.contrat_name
+                  }}</span>
+                </mat-list-item>
 
-              <div class="info-row">
-                <mat-icon class="info-icon">calendar_today</mat-icon>
-                <div class="info-details">
-                  <span class="info-label">Date de souscription</span>
-                  <span class="info-value">{{ contrat.information.date_souscription }}</span>
-                </div>
-              </div>
+                <mat-list-item>
+                  <span matListItemTitle class="info-label">Activité</span>
+                  <span matListItemLine class="info-value">{{ contrat.information.activite }}</span>
+                </mat-list-item>
 
-              <div class="info-row">
-                <mat-icon class="info-icon">location_on</mat-icon>
-                <div class="info-details">
-                  <span class="info-label">Adresse</span>
-                  <span class="info-value">{{ contrat.information.adresse }}</span>
-                </div>
-              </div>
+                <mat-list-item>
+                  <span matListItemTitle class="info-label">Date de souscription</span>
+                  <span matListItemLine class="info-value">{{
+                    contrat.information.date_souscription
+                  }}</span>
+                </mat-list-item>
+
+                <mat-list-item>
+                  <span matListItemTitle class="info-label">Adresse</span>
+                  <span matListItemLine class="info-value">{{ contrat.information.adresse }}</span>
+                </mat-list-item>
+              </mat-list>
             </div>
           </mat-tab>
 
@@ -98,7 +98,11 @@ import { ConsommationChart } from '../consommation-chart/consommation-chart';
       opacity: 1;
       overflow: hidden;
     }
-
+    .title {
+      font-size: 32px;
+      font-weight: 500;
+      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    }
     mat-card-header {
       margin-bottom: 20px;
     }
@@ -109,42 +113,29 @@ import { ConsommationChart } from '../consommation-chart/consommation-chart';
       min-height: 300px;
     }
 
-    .info-row {
-      display: flex;
-      align-items: center;
-      padding: 16px 0;
+    mat-list-item {
+      height: auto !important;
+      padding: 12px 0;
       border-bottom: 1px solid #e0e0e0;
     }
 
-    .info-row:last-child {
+    mat-list-item:last-child {
       border-bottom: none;
     }
 
-    .info-icon {
-      color: #1976d2;
-      margin-right: 16px;
-      font-size: 28px;
-      width: 28px;
-      height: 28px;
-    }
-
-    .info-details {
-      display: flex;
-      flex-direction: column;
-    }
-
     .info-label {
-      font-size: 13px;
+      font-size: 14px;
       color: #757575;
       text-transform: uppercase;
       letter-spacing: 0.5px;
+      min-width: 180px;
     }
 
     .info-value {
-      font-size: 18px;
+      font-size: 16px;
       color: #212121;
-      margin-top: 4px;
       font-weight: 500;
+      padding-left: 70%;
     }
 
     .consommation-tab {
