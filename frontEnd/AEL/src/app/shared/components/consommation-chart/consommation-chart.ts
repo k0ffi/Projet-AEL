@@ -50,9 +50,8 @@ export class ConsommationChart implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    if (changes['consommation']) {
-      this.generateChartUrl();
-    }
+    // Générer le graphique à chaque changement des inputs
+    this.generateChartUrl();
   }
 
   generateChartUrl() {

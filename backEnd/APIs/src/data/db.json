@@ -81,7 +81,7 @@
       "email": "djawoukoffimario@gmail.com",
       "password": "$2b$10$lsMsoPPNvD5Z7jKgu1BKyuwwkBI4Z5ESy/.0e3wJr/ibS0L8823qO",
       "token": null,
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE3NzI3NDY4OTk4MjEiLCJlbWFpbCI6ImRqYXdvdWtvZmZpbWFyaW9AZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3NzI4MzA2MzUsImV4cCI6MTc3MzQzNTQzNX0.XYoTouS_qdy_RgHJJem14nvHu8rYteqLCFoHFs1AevQ",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE3NzI3NDY4OTk4MjEiLCJlbWFpbCI6ImRqYXdvdWtvZmZpbWFyaW9AZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3NzI4MzExNTAsImV4cCI6MTc3MzQzNTk1MH0.kB6Smh5CbnEpuLjd-3GaWnbVt-WXY1xrENatSAx-eC8",
       "contrats": ["contrat_001", "contrat_002", "contrat_003"]
     }
   ],
