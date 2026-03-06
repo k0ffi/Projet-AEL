@@ -81,9 +81,118 @@
       "email": "djawoukoffimario@gmail.com",
       "password": "$2b$10$lsMsoPPNvD5Z7jKgu1BKyuwwkBI4Z5ESy/.0e3wJr/ibS0L8823qO",
       "token": null,
-      "refreshToken": null,
-      "contrats": []
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE3NzI3NDY4OTk4MjEiLCJlbWFpbCI6ImRqYXdvdWtvZmZpbWFyaW9AZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3NzI4MjE3NzgsImV4cCI6MTc3MzQyNjU3OH0.1ufGMMqt5xN_E50lfQ95sigMkBXzgsy3wYDFCHZ67G0",
+      "contrats": ["contrat_001", "contrat_002", "contrat_003"]
     }
   ],
-  "contrats": []
+  "contrats": [
+    {
+      "id": "contrat_001",
+      "userId": "1772746899821",
+      "information": {
+        "reference": 1001,
+        "contrat_name": "Contrat Électricité",
+        "activite": "Électricité",
+        "date_souscription": "15/01/2024",
+        "adresse": "123 Rue de la Lumière, 75001 Paris"
+      },
+      "consommation": {
+        "labels": [
+          "Janvier",
+          "Février",
+          "Mars",
+          "Avril",
+          "Mai",
+          "Juin",
+          "Juillet"
+        ],
+        "datasets": [
+          {
+            "label": "Consommation électrique (kWh)",
+            "backgroundColor": "rgb(255, 205, 86)",
+            "data": [350, 320, 280, 250, 200, 180, 220]
+          }
+        ]
+      },
+      "facture": {
+        "montant": 89.5,
+        "reference": "FAC-ELEC-2024-001",
+        "date_facture": "01/02/2024"
+      },
+      "date_creation": "2024-01-15T10:00:00.000Z",
+      "date_modification": "2024-01-15T10:00:00.000Z"
+    },
+    {
+      "id": "contrat_002",
+      "userId": "1772746899821",
+      "information": {
+        "reference": 1002,
+        "contrat_name": "Contrat Gaz",
+        "activite": "Gaz Naturel",
+        "date_souscription": "20/02/2024",
+        "adresse": "123 Rue de la Lumière, 75001 Paris"
+      },
+      "consommation": {
+        "labels": [
+          "Janvier",
+          "Février",
+          "Mars",
+          "Avril",
+          "Mai",
+          "Juin",
+          "Juillet"
+        ],
+        "datasets": [
+          {
+            "label": "Consommation de gaz (m³)",
+            "backgroundColor": "rgb(255, 99, 132)",
+            "data": [150, 140, 120, 80, 50, 30, 25]
+          }
+        ]
+      },
+      "facture": {
+        "montant": 120,
+        "reference": "FAC-GAZ-2024-002",
+        "date_facture": "01/03/2024"
+      },
+      "date_creation": "2024-02-20T14:30:00.000Z",
+      "date_modification": "2024-02-20T14:30:00.000Z"
+    },
+    {
+      "id": "contrat_003",
+      "userId": "1772746899821",
+      "information": {
+        "reference": 1003,
+        "contrat_name": "Contrat Eau",
+        "activite": "Eau Potable",
+        "date_souscription": "10/03/2024",
+        "adresse": "456 Avenue de l'Eau, 75002 Paris"
+      },
+      "consommation": {
+        "labels": [
+          "Janvier",
+          "Février",
+          "Mars",
+          "Avril",
+          "Mai",
+          "Juin",
+          "Juillet"
+        ],
+        "datasets": [
+          {
+            "label": "Consommation d'eau (m³)",
+            "backgroundColor": "rgb(54, 162, 235)",
+            "data": [45, 42, 48, 55, 60, 75, 80]
+          }
+        ]
+      },
+      "facture": {
+        "montant": 65.75,
+        "reference": "FAC-EAU-2024-003",
+        "date_facture": "01/04/2024"
+      },
+      "date_creation": "2024-03-10T09:15:00.000Z",
+      "date_modification": "2024-03-10T09:15:00.000Z"
+    }
+  ]
 }

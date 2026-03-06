@@ -1,0 +1,3590 @@
+{
+  "timestamp": "2026-03-06T14:32:14.242Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "86ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T14:32:14.242Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "87ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T14:32:14.365Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7"
+    }
+  },
+  "response": {
+    "statusCode": 401,
+    "duration": "0ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T14:32:14.365Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7"
+    }
+  },
+  "response": {
+    "statusCode": 401,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T15:24:00.947Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "96ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T15:24:00.947Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "97ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T15:24:01.075Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7"
+    }
+  },
+  "response": {
+    "statusCode": 401,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T15:24:01.075Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7"
+    }
+  },
+  "response": {
+    "statusCode": 401,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T15:28:18.779Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "69ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T15:28:18.779Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "70ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T15:28:18.874Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 401,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T15:28:18.874Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 401,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T15:35:44.920Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "70ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T15:35:44.920Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "71ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T15:35:45.031Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T15:35:45.031Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "3ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T15:36:31.652Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "74ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T15:36:31.652Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "75ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T15:36:31.765Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T15:36:31.765Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T16:29:01.465Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "69ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T16:29:01.465Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "71ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T16:29:01.567Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T16:29:01.567Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T16:54:46.235Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "5ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T16:54:46.235Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "7ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T16:54:46.250Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T16:54:46.250Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T16:57:20.490Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T16:57:20.490Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T16:58:32.371Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "0ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T16:58:32.371Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T16:59:39.559Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T16:59:39.559Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:00:24.794Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:00:24.794Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:00:26.271Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:00:26.271Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:02:22.712Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:02:22.712Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:04:27.426Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:04:27.426Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:04:28.602Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "0ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:04:28.602Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 403,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:05:26.362Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "72ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:05:26.362Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "72ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:05:26.461Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:05:26.461Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:13:54.510Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:13:54.510Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:14:24.099Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "69ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:14:24.099Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "70ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:14:24.196Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:14:24.196Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:16:11.325Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:16:11.325Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:16:18.575Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:16:18.575Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:16:36.111Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:16:36.111Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:17:44.213Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "68ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:17:44.213Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "69ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:17:44.310Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:17:44.310Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:25:26.661Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "67ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:25:26.661Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "68ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:25:26.757Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:25:26.757Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:25:32.161Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/auth/logout",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "2",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:25:32.161Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/auth/logout",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "2",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "3ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:25:43.728Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "66ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:25:43.728Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "66ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:25:43.822Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:25:43.822Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:27:51.578Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/auth/logout",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "2",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "3ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:27:51.578Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/auth/logout",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "2",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "3ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:28:13.027Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "68ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:28:13.027Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "69ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:28:13.128Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "7ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:28:13.128Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "8ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:38:22.850Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/users/test",
+    "headers": {
+      "host": "localhost:3000",
+      "user-agent": "curl/8.7.1",
+      "accept": "*/*"
+    }
+  },
+  "response": {
+    "statusCode": 401,
+    "duration": "0ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:38:22.850Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/users/test",
+    "headers": {
+      "host": "localhost:3000",
+      "user-agent": "curl/8.7.1",
+      "accept": "*/*"
+    }
+  },
+  "response": {
+    "statusCode": 401,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:39:51.863Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:39:51.863Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"6d3-4Nnj+ys4BcX3vq4qGLIL5Bbb0DY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:39:51.894Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"715-jyX6X3MDcPWuJrqyijteU2JfqUY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:39:51.894Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"715-jyX6X3MDcPWuJrqyijteU2JfqUY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:40:54.325Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "59",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 401,
+    "duration": "68ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:40:54.325Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "59",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 401,
+    "duration": "69ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:41:07.290Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "67ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:41:07.290Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "67ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:41:07.377Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:41:07.377Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:41:30.406Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/auth/logout",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "2",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:41:30.406Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/auth/logout",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "2",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:44:38.790Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "68ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:44:38.790Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "68ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:44:38.879Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"715-jyX6X3MDcPWuJrqyijteU2JfqUY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:44:38.879Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"715-jyX6X3MDcPWuJrqyijteU2JfqUY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:57:32.149Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"715-jyX6X3MDcPWuJrqyijteU2JfqUY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:57:32.149Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"715-jyX6X3MDcPWuJrqyijteU2JfqUY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:58:11.288Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "73ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:58:11.288Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "74ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:58:11.390Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T17:58:11.390Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T18:29:38.194Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "72ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T18:29:38.194Z",
+  "request": {
+    "method": "POST",
+    "url": "/api/users/login",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "58",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "73ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T18:29:38.293Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "3ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T18:29:38.293Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "3ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T18:29:38.300Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"715-jyX6X3MDcPWuJrqyijteU2JfqUY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T18:29:38.300Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"715-jyX6X3MDcPWuJrqyijteU2JfqUY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T18:29:56.467Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"715-jyX6X3MDcPWuJrqyijteU2JfqUY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T18:29:56.467Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"715-jyX6X3MDcPWuJrqyijteU2JfqUY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T18:29:56.481Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"715-jyX6X3MDcPWuJrqyijteU2JfqUY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T18:29:56.481Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"715-jyX6X3MDcPWuJrqyijteU2JfqUY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T18:33:00.990Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"715-jyX6X3MDcPWuJrqyijteU2JfqUY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T18:33:00.990Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"715-jyX6X3MDcPWuJrqyijteU2JfqUY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "2ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T18:33:00.998Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"715-jyX6X3MDcPWuJrqyijteU2JfqUY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------
+{
+  "timestamp": "2026-03-06T18:33:00.998Z",
+  "request": {
+    "method": "GET",
+    "url": "/api/contrats/user/1772746899821",
+    "headers": {
+      "host": "localhost:3000",
+      "connection": "keep-alive",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "authorization": "[MASQUÉ]",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "origin": "http://localhost:4200",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-dest": "empty",
+      "referer": "http://localhost:4200/",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7",
+      "cookie": "[MASQUÉ]",
+      "if-none-match": "W/\"715-jyX6X3MDcPWuJrqyijteU2JfqUY\""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "duration": "1ms"
+  }
+}
+--------------------------------------------------------------------------------

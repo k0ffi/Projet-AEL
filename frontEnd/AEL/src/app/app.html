@@ -1,11 +1,19 @@
 <div class="app-wrapper">
   <header class="app-header">
-    <app-entete>Agence en ligne</app-entete>
+    <app-entete [showLogout]="isLoggedIn()">Agence en ligne</app-entete>
   </header>
 
-  <main class="app-main">
-    <app-contenu></app-contenu>
-  </main>
+  <div class="app-layout">
+    @if (isLoggedIn()) {
+      <aside class="app-sidebar">
+        <app-menu></app-menu>
+      </aside>
+    }
+
+    <main class="app-main">
+      <app-contenu></app-contenu>
+    </main>
+  </div>
 
   <footer class="app-footer">
     <app-entete></app-entete>

@@ -5,36 +5,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
-
-interface InformationContrat {
-  reference: string;
-  activite: string;
-  date_souscription: string;
-  adresse: string;
-}
-
-interface Consommation {
-  periode: string;
-  valeur: number;
-  unite: string;
-}
-
-interface Facture {
-  id: string;
-  date: string;
-  montant: number;
-  statut: 'payee' | 'en_attente' | 'en_retard';
-}
-
-interface Contrat {
-  id: string;
-  userId: string;
-  information: InformationContrat;
-  consommation: Consommation[];
-  facture: Facture[];
-  date_creation: string;
-  date_modification: string;
-}
+import { Contrat } from '../../models/contrat.model';
 
 @Component({
   selector: 'app-contrat-detail',
@@ -49,14 +20,17 @@ interface Contrat {
   template: `
     <mat-card class="contrat-detail-card">
       <mat-card-header>
-        <mat-card-title>{{ contrat.information.activite }}</mat-card-title>
-        <mat-card-subtitle>Ref: {{ contrat.information.reference }}</mat-card-subtitle>
+        <mat-card-title>{{ contrat.information.contrat_name }}</mat-card-title>
+        <mat-card-subtitle
+          >Ref: {{ contrat.information.reference }} -
+          {{ contrat.information.activite }}</mat-card-subtitle
+        >
       </mat-card-header>
 
       <mat-card-content>
         <mat-tab-group animationDuration="300ms">
           <!-- Onglet Informations -->
-          <mat-tab label="Informations">
+          <mat-tab label="INFORMATIONS">
             <div class="tab-content">
               <div class="info-row">
                 <mat-icon class="info-icon">description</mat-icon>
@@ -109,28 +83,26 @@ interface Contrat {
           </mat-tab>
 
           <!-- Onglet Consommation -->
-          <mat-tab label="Consommation">
+          <mat-tab label="CONSOMMATION">
             <div class="tab-content">
-              @if (contrat.consommation && contrat.consommation.length > 0) {
-                <table mat-table [dataSource]="contrat.consommation" class="consommation-table">
-                  <ng-container matColumnDef="periode">
-                    <th mat-header-cell *matHeaderCellDef>Période</th>
-                    <td mat-cell *matCellDef="let element">{{ element.periode }}</td>
-                  </ng-container>
-
-                  <ng-container matColumnDef="valeur">
-                    <th mat-header-cell *matHeaderCellDef>Valeur</th>
-                    <td mat-cell *matCellDef="let element">{{ element.valeur }}</td>
-                  </ng-container>
-
-                  <ng-container matColumnDef="unite">
-                    <th mat-header-cell *matHeaderCellDef>Unité</th>
-                    <td mat-cell *matCellDef="let element">{{ element.unite }}</td>
-                  </ng-container>
-
-                  <tr mat-header-row *matHeaderRowDef="consommationColumns"></tr>
-                  <tr mat-row *matRowDef="let row; columns: consommationColumns"></tr>
-                </table>
+              @if (
+                contrat.consommation &&
+                contrat.consommation.labels &&
+                contrat.consommation.labels.length > 0
+              ) {
+                <div class="consommation-chart">
+                  <h3>{{ contrat.consommation.datasets[0].label || 'Consommation' }}</h3>
+                  <div class="consommation-data">
+                    @for (label of contrat.consommation.labels; track label; let i = $index) {
+                      <div class="consommation-row">
+                        <span class="periode">{{ label }}</span>
+                        <span class="valeur">{{
+                          contrat.consommation.datasets[0].data[i] || 0
+                        }}</span>
+                      </div>
+                    }
+                  </div>
+                </div>
               } @else {
                 <div class="empty-message">
                   <mat-icon>bar_chart</mat-icon>
@@ -141,56 +113,21 @@ interface Contrat {
           </mat-tab>
 
           <!-- Onglet Factures -->
-          <mat-tab label="Factures">
+          <mat-tab label="FACTURES">
             <div class="tab-content">
-              @if (contrat.facture && contrat.facture.length > 0) {
-                <table mat-table [dataSource]="contrat.facture" class="facture-table">
-                  <ng-container matColumnDef="date">
-                    <th mat-header-cell *matHeaderCellDef>Date</th>
-                    <td mat-cell *matCellDef="let element">{{ element.date }}</td>
-                  </ng-container>
-
-                  <ng-container matColumnDef="montant">
-                    <th mat-header-cell *matHeaderCellDef>Montant</th>
-                    <td mat-cell *matCellDef="let element">
-                      {{ element.montant | number: '1.2-2' }} €
-                    </td>
-                  </ng-container>
-
-                  <ng-container matColumnDef="statut">
-                    <th mat-header-cell *matHeaderCellDef>Statut</th>
-                    <td mat-cell *matCellDef="let element">
-                      <span class="statut-badge" [class]="element.statut">
-                        @switch (element.statut) {
-                          @case ('payee') {
-                            Payée
-                          }
-                          @case ('en_attente') {
-                            En attente
-                          }
-                          @case ('en_retard') {
-                            En retard
-                          }
-                        }
-                      </span>
-                    </td>
-                  </ng-container>
-
-                  <ng-container matColumnDef="actions">
-                    <th mat-header-cell *matHeaderCellDef>Actions</th>
-                    <td mat-cell *matCellDef="let element">
-                      <button mat-icon-button color="primary">
-                        <mat-icon>download</mat-icon>
-                      </button>
-                      <button mat-icon-button>
-                        <mat-icon>visibility</mat-icon>
-                      </button>
-                    </td>
-                  </ng-container>
-
-                  <tr mat-header-row *matHeaderRowDef="factureColumns"></tr>
-                  <tr mat-row *matRowDef="let row; columns: factureColumns"></tr>
-                </table>
+              @if (contrat.facture) {
+                <div class="facture-list">
+                  <div class="facture-row header">
+                    <span>Référence</span>
+                    <span>Montant</span>
+                    <span>Date</span>
+                  </div>
+                  <div class="facture-row">
+                    <span>{{ contrat.facture.reference }}</span>
+                    <span class="montant">{{ contrat.facture.montant | number: '1.2-2' }} €</span>
+                    <span>{{ contrat.facture.date_facture || '-' }}</span>
+                  </div>
+                </div>
               } @else {
                 <div class="empty-message">
                   <mat-icon>receipt_long</mat-icon>
@@ -210,11 +147,10 @@ interface Contrat {
   `,
   styles: `
     .contrat-detail-card {
-      width: 600px;
-      height: 463px;
-      position: absolute;
-      top: 10px;
-      left: 16px;
+      width: auto;
+      height: auto;
+      margin-top: 10px !important;
+      margin-bottom: 16px !important;
       border-radius: 4px;
       opacity: 1;
       overflow: hidden;
@@ -264,9 +200,62 @@ interface Contrat {
       margin-top: 4px;
     }
 
-    .consommation-table,
-    .facture-table {
-      width: 100%;
+    /* Styles pour la consommation */
+    .consommation-chart h3 {
+      margin: 0 0 16px 0;
+      color: #3f51b5;
+      font-size: 16px;
+    }
+
+    .consommation-data {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .consommation-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+    }
+
+    .consommation-row .periode {
+      font-weight: 500;
+      color: #333;
+    }
+
+    .consommation-row .valeur {
+      color: #3f51b5;
+      font-weight: 600;
+    }
+
+    /* Styles pour les factures */
+    .facture-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .facture-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 12px;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+      gap: 16px;
+    }
+
+    .facture-row.header {
+      background-color: #3f51b5;
+      color: white;
+      font-weight: 500;
+    }
+
+    .facture-row .montant {
+      font-weight: 600;
+      color: #2e7d32;
     }
 
     .empty-message {
@@ -282,29 +271,6 @@ interface Contrat {
       margin-bottom: 16px;
     }
 
-    .statut-badge {
-      padding: 4px 12px;
-      border-radius: 16px;
-      font-size: 12px;
-      font-weight: 500;
-      text-transform: uppercase;
-    }
-
-    .statut-badge.payee {
-      background-color: #e8f5e9;
-      color: #2e7d32;
-    }
-
-    .statut-badge.en_attente {
-      background-color: #fff3e0;
-      color: #ef6c00;
-    }
-
-    .statut-badge.en_retard {
-      background-color: #ffebee;
-      color: #c62828;
-    }
-
     mat-card-actions {
       padding: 16px;
       display: flex;
@@ -314,7 +280,4 @@ interface Contrat {
 })
 export class ContratDetail {
   @Input() contrat!: Contrat;
-
-  consommationColumns: string[] = ['periode', 'valeur', 'unite'];
-  factureColumns: string[] = ['date', 'montant', 'statut', 'actions'];
 }

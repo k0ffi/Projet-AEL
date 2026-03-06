@@ -1,11 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { LayoutService } from '../../core/services/layout.service';
+import { AuthService } from '../../core/services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-entete',
-  imports: [],
+  imports: [MatIconModule, MatButtonModule],
   template: `
     <div class="entete">
       <ng-content></ng-content>
+      @if (showLogout) {
+        <button mat-icon-button class="logout-btn" (click)="logout()">
+          <mat-icon>power_settings_new</mat-icon>
+        </button>
+      }
     </div>
   `,
   styles: `
@@ -25,7 +35,25 @@ import { Component } from '@angular/core';
       letter-spacing: 0.25px;
       text-align: center;
       color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logout-btn {
+      color: white !important;
     }
   `,
 })
-export class Entete {}
+export class Entete {
+  @Input() showLogout = false;
+
+  private layoutService = inject(LayoutService);
+  private authService = inject(AuthService);
+  private router = inject(Router);
+
+  logout() {
+    this.layoutService.setLoggedIn(false);
+    this.authService.logout();
+  }
+}

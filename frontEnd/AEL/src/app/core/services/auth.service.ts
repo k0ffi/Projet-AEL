@@ -66,11 +66,16 @@ export class AuthService {
   /**
    * Déconnexion - Efface le cookie et l'état local
    */
-  public logout(): void {
+  public logout(layoutService?: any): void {
     const token = this.accessToken;
     this.accessToken = null;
     localStorage.removeItem('accessToken');
     this.isLoggedInSubject.next(false);
+
+    // Mettre à jour le layoutService si fourni
+    if (layoutService) {
+      layoutService.setLoggedIn(false);
+    }
 
     if (token) {
       this.http
