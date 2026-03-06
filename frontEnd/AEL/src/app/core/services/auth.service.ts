@@ -1,8 +1,9 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { tap, catchError, shareReplay } from 'rxjs/operators';
 import { Router } from '@angular/router';
+import { isPlatformBrowser } from '@angular/common';
 
 const API_URL = 'http://localhost:3000';
 
@@ -10,11 +11,15 @@ const API_URL = 'http://localhost:3000';
 export class AuthService {
   private accessToken: string | null = null;
   private isLoggedInSubject = new BehaviorSubject<boolean>(false);
+  private isBrowser: boolean;
 
   constructor(
     private http: HttpClient,
     private router: Router,
-  ) {}
+    @Inject(PLATFORM_ID) private platformId: Object,
+  ) {
+    this.isBrowser = isPlatformBrowser(this.platformId);
+  }
 
   /**
    * Login - Envoie les identifiants au backend
@@ -26,7 +31,9 @@ export class AuthService {
       .pipe(
         tap((response: any) => {
           this.accessToken = response.accessToken;
-          localStorage.setItem('accessToken', response.accessToken);
+          if (this.isBrowser) {
+            localStorage.setItem('accessToken', response.accessToken);
+          }
           this.isLoggedInSubject.next(true);
         }),
         shareReplay(1),
@@ -59,8 +66,11 @@ export class AuthService {
     if (this.accessToken) {
       return this.accessToken;
     }
-    // Sinon vérifier dans localStorage
-    return localStorage.getItem('accessToken');
+    // Sinon vérifier dans localStorage (seulement côté navigateur)
+    if (this.isBrowser) {
+      return localStorage.getItem('accessToken');
+    }
+    return null;
   }
 
   /**
@@ -69,7 +79,9 @@ export class AuthService {
   public logout(layoutService?: any): void {
     const token = this.accessToken;
     this.accessToken = null;
-    localStorage.removeItem('accessToken');
+    if (this.isBrowser) {
+      localStorage.removeItem('accessToken');
+    }
     this.isLoggedInSubject.next(false);
 
     // Mettre à jour le layoutService si fourni
@@ -110,7 +122,9 @@ export class AuthService {
     return this.http.post(`${API_URL}/api/auth/refresh`, {}, { withCredentials: true }).pipe(
       tap((response: any) => {
         this.accessToken = response.accessToken;
-        localStorage.setItem('accessToken', response.accessToken);
+        if (this.isBrowser) {
+          localStorage.setItem('accessToken', response.accessToken);
+        }
       }),
       shareReplay(1),
       catchError((error) => {

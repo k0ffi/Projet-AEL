@@ -1,19 +1,30 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Contrat } from '../../shared/models/contrat.model';
+import { isPlatformBrowser } from '@angular/common';
 
 const API_URL = 'http://localhost:3000';
 
 @Injectable({ providedIn: 'root' })
 export class ContratService {
-  constructor(private http: HttpClient) {}
+  private isBrowser: boolean;
+
+  constructor(
+    private http: HttpClient,
+    @Inject(PLATFORM_ID) private platformId: Object,
+  ) {
+    this.isBrowser = isPlatformBrowser(this.platformId);
+  }
 
   /**
    * Récupère l'access token depuis localStorage
    */
   private getAccessToken(): string | null {
-    return localStorage.getItem('accessToken');
+    if (this.isBrowser) {
+      return localStorage.getItem('accessToken');
+    }
+    return null;
   }
 
   /**
@@ -90,6 +101,8 @@ export class ContratService {
    * @returns ID utilisateur ou null si non connecté
    */
   getUserIdFromToken(): string | null {
+    if (!this.isBrowser) return null;
+
     const token = localStorage.getItem('accessToken');
     if (!token) return null;
 
