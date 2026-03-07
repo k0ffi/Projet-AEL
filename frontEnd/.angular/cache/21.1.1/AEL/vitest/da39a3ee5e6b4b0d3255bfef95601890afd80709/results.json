@@ -1,0 +1,31 @@
+{
+  "version": "4.0.18",
+  "results": [
+    ["AEL (chromium):src/app/app.spec.ts", { "duration": 43.80000000074506, "failed": false }],
+    [
+      "AEL (chromium):src/app/pages/inscription/inscription.spec.ts",
+      { "duration": 106.20000000298023, "failed": false }
+    ],
+    [
+      "AEL (chromium):src/app/shared/components/date-piker/date-piker.spec.ts",
+      { "duration": 68.5, "failed": false }
+    ],
+    [
+      "AEL (chromium):src/app/pages/connexion/connexion.spec.ts",
+      { "duration": 74.80000000074506, "failed": false }
+    ],
+    [
+      "AEL (chromium):src/app/features/contenu/contenu.spec.ts",
+      { "duration": 19.399999998509884, "failed": false }
+    ],
+    [
+      "AEL (chromium):src/app/features/sign-up/sign-up.spec.ts",
+      { "duration": 110.10000000149012, "failed": false }
+    ],
+    [
+      "AEL (chromium):src/app/features/entete/entete.spec.ts",
+      { "duration": 28.899999998509884, "failed": false }
+    ],
+    ["AEL (chromium):src/app/features/login/login.spec.ts", { "duration": 75.5, "failed": false }]
+  ]
+}
